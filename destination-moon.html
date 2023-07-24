@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resetcss.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="destination page-transition fade-in-an2">
+    <header>
+      <img src="assets/shared/logo.svg" alt="logo" class="header-logo" />
+      <img
+        src="assets/shared/icon-hamburger.svg"
+        alt="open"
+        class="header-hamburger"
+      />
+      <div class="h-line"></div>
+      <div class="navigation hamburger">
+        <img
+          src="assets/shared/icon-close.svg"
+          alt="close"
+          class="header-close"
+        />
+        <nav>
+          <div class="home-nav navitm">
+            <a href="index.html"
+              ><p><b>00</b> Home</p></a
+            >
+            <div class="hover-underline ho"></div>
+          </div>
+          <div class="destination-nav navitm">
+            <a href="destination-moon.html"
+              ><p><b>01</b> Destination</p></a
+            >
+            <div class="underline"></div>
+            <div class="hover-underline de"></div>
+          </div>
+          <div class="crew-nav navitm">
+            <a href="crew-commander.html"
+              ><p><b>02</b> Crew</p></a
+            >
+            <div class="hover-underline cr"></div>
+          </div>
+          <div class="technology-nav navitm">
+            <a href="technology-vehicle.html"
+              ><p><b>03</b> Technology</p></a
+            >
+            <div class="hover-underline te"></div>
+          </div>
+        </nav>
+        <div class="blur"></div>
+      </div>
+    </header>
+    <main>
+      <div class="left">
+        <h5><b>01</b> PICK YOUR DESTINATION</h5>
+        <img src="assets/destination/image-moon.png" />
+      </div>
+      <div class="right">
+        <nav>
+          <div class="moonitm navitm">
+            <a href="destination-moon.html"><p>Moon</p></a>
+            <div class="underline"></div>
+            <div class="hover-underline mo"></div>
+          </div>
+          <div class="marsitm navitm">
+            <a href="destination-mars.html"><p>Mars</p></a>
+            <div class="hover-underline ma"></div>
+          </div>
+          <div class="europaitm navitm">
+            <a href="destination-europa.html"><p>Europa</p></a>
+            <div class="hover-underline eu"></div>
+          </div>
+          <div class="titanitm navitm">
+            <a href="destination-titan.html"><p>Titan</p></a>
+            <div class="hover-underline ti"></div>
+          </div>
+        </nav>
+        <h2>MOON</h2>
+        <p>
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <div class="line"></div>
+        <div class="bottom-content">
+          <div class="distance">
+            <p class="subhead2">AVG. DISTANCE</p>
+            <p class="subhead1">384,400 KM</p>
+          </div>
+          <div class="travel">
+            <p class="subhead2">EST. TRAVEL TIME</p>
+            <p class="subhead1">3 DAYS</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="header-toggle.js"></script>
+    <script>
+      const body = document.querySelector("body");
+      window.addEventListener("load", visible);
+      function visible() {
+        body.style = "visibility: visible;";
+      }
+    </script>
+  </body>
+</html>

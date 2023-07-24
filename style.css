@@ -1,0 +1,1088 @@
+/* TABLE OF CONTENTS 
+
+    1.TEXT AND TYPOGRAPHY
+    2.HEADER
+    3.HOME-PAGE
+    4.DESTINATION-PAGE
+    5.CREW-PAGE
+    6.TECHNOLOGY-PAGE
+    7.MEDIA TABLET
+    8.MEDIA PHONE
+
+*/
+
+/* 1.TEXT AND TYPOGRAPHY ------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@400;700&family=Bellefair&display=swap");
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bellefair", serif;
+}
+h5 {
+  font-family: "Barlow Condensed", serif;
+}
+nav {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+h1 {
+  font-size: 150px;
+}
+h2 {
+  font-size: 100px;
+}
+h3 {
+  font-size: 53px;
+}
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+}
+b {
+  font-weight: 700;
+}
+.subhead1 {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+}
+.subhead2 {
+  font-family: "Barlow Condensed", serif;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+/* 2.HEADER -------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  padding: 40px 0 0 55px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  position: relative;
+  min-width: 830px;
+  height: 96px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.041);
+  align-items: center;
+  justify-content: center;
+}
+.blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(25px);
+  z-index: -1;
+}
+nav {
+  display: flex;
+  width: 542px;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+.h-line {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.25;
+  margin-right: -30px;
+  margin-left: 64px;
+  box-sizing: content-box;
+}
+.navitm {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.hover-underline {
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  position: absolute;
+  bottom: -40px;
+}
+
+.home-nav:hover a:hover ~ .ho {
+  animation: hoverline 0.4s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+.destination-nav:hover a:hover ~ .de {
+  animation: hoverline 0.5s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+.crew-nav:hover a:hover ~ .cr {
+  animation: hoverline 0.4s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+.technology-nav:hover a:hover ~ .te {
+  animation: hoverline 0.5s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+@keyframes hoverline {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.header-close {
+  display: none;
+}
+.header-hamburger {
+  display: none;
+}
+/* 3.HOME-PAGE ---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body.home {
+  background: url(assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.home main {
+  display: flex;
+  margin: 251px 75px 0 110px;
+  justify-content: space-between;
+}
+.home .left {
+  color: #d0d6f9;
+  width: 450px;
+  height: 352px;
+}
+.home .left h1 {
+  color: white;
+  margin: 24px 0;
+}
+.home .left p {
+  line-height: 32px;
+}
+
+.home .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 450px;
+  height: 450px;
+}
+.home .shadow {
+  transition: 0.5s;
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  opacity: 10%;
+  z-index: -1;
+}
+.home button {
+  height: 274px;
+  width: 274px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .underline {
+  position: absolute;
+  bottom: -40px;
+  background-color: white;
+  height: 3px;
+  width: 100%;
+}
+.explore-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 4.DESTINATION PAGE --------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body.destination {
+  background: url(assets/destination/background-destination-desktop.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.destination .underline {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: -40px;
+}
+.destination main {
+  color: white;
+  display: flex;
+  margin: 76px 163px 0 110px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.destination main b {
+  opacity: 25%;
+}
+.destination .right {
+  width: 445px;
+  height: 472px;
+  margin-bottom: 33px;
+}
+.destination .right nav {
+  width: 285px;
+  height: 34px;
+  margin-bottom: 37px;
+}
+.destination .right .hover-underline {
+  bottom: 0;
+  left: -1px;
+}
+.destination .right .underline {
+  bottom: 0;
+}
+.moonitm:hover a:hover ~ .mo {
+  animation: hoverline 0.5s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+.marsitm:hover a:hover ~ .ma {
+  animation: hoverline 0.5s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+.europaitm:hover a:hover ~ .eu {
+  animation: hoverline 0.5s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+.titanitm:hover a:hover ~ .ti {
+  animation: hoverline 0.5s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+.destination .right p {
+  color: #d0d6f9;
+  line-height: 32px;
+}
+.destination .bottom-content {
+  display: flex;
+}
+.destination .distance {
+  margin-right: 79px;
+}
+.destination .right .line {
+  width: 100%;
+  height: 1px;
+  background-color: #383b4b;
+  margin: 54px 0 28px 0;
+}
+.destination .right h2 {
+  margin-bottom: 14px;
+}
+.destination h5 {
+  margin-bottom: 97px;
+}
+.page-transition {
+  visibility: hidden;
+}
+.fade-in-an2 {
+  animation: fade-in2 1.5s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in2 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/* 5. CREW PAGE ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+body.crew {
+  background: url(assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.crew .underline {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: -40px;
+}
+.crew main {
+  margin: 13vh 137px 0 111px;
+}
+.crew .commander-gr {
+  display: flex;
+  height: 712px;
+  justify-content: space-between;
+}
+.crew .left {
+  width: 614px;
+}
+.crew .left h5 {
+  margin-bottom: 154px;
+  color: white;
+}
+.crew .left b {
+  opacity: 25%;
+}
+.crew .left h4 {
+  color: white;
+  opacity: 50%;
+}
+.crew .left h3 {
+  color: white;
+  margin: 15px 0 27px 0;
+}
+.crew .left p {
+  color: #d0d6f9;
+  line-height: 32px;
+  width: 444px;
+  margin-bottom: 120px;
+}
+.crew .radiobox {
+  width: 132px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.crew .radiobox input {
+  display: none;
+}
+.crew .radiobox span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.185);
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.crew .radiobox input:checked ~ span:after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+.crew .radiobox input:not(:checked) ~ span:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.crew .radiobox-position {
+  position: absolute;
+  bottom: 94px;
+}
+.crew .mission-specialist-gr {
+  display: flex;
+  height: 712px;
+  justify-content: space-between;
+}
+.mission-specialist-gr .right {
+  margin-top: 6vh;
+}
+.crew .pilot-gr {
+  display: flex;
+  height: 712px;
+  justify-content: space-between;
+}
+.pilot-gr .right {
+  margin-top: 5vh;
+}
+.crew .engineer-gr {
+  display: flex;
+  height: 712px;
+  justify-content: space-between;
+}
+.engineer-gr .right {
+  margin-top: 10vh;
+}
+.crew .mission-specialist-gr {
+  display: none;
+}
+.crew .right {
+  user-select: none;
+}
+.crew .pilot-gr {
+  display: none;
+}
+.crew .engineer-gr {
+  display: none;
+}
+.fade-in-an {
+  animation: fade-in 0.5s 1;
+  pointer-events: auto;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/* 6.TECHNOLOGY PAGE-------------------------------------------------------------------------------------------------------------------------------------------------------- */
+body.technology {
+  background: url(assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.technology .underline {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: -40px;
+}
+.technology main {
+  color: white;
+  margin: 76px 0 0 111px;
+}
+.technology main b {
+  opacity: 25%;
+}
+.technology h5 {
+  margin: 0 0 26px 0;
+}
+.technology .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.technology .vehicle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.technology .left {
+  display: flex;
+  height: 527px;
+  align-items: center;
+}
+.technology .left p {
+  color: #d0d6f9;
+  line-height: 32px;
+}
+.technology .left h3 {
+  margin: 11px 0 17px 0;
+}
+.technology .left .termino {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  line-height: normal;
+}
+.technology .radio-box {
+  margin-right: 80px;
+  height: 303px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.technology .radio-box input {
+  display: none;
+}
+.technology .radio-box span {
+  display: block;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid white;
+  opacity: 25%;
+}
+.technology label {
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.technology .button-text {
+  font-family: "Bellefair", sans-serif;
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  bottom: 23px;
+  left: 34px;
+  z-index: -1;
+  user-select: none;
+}
+.technology .radio-box span:hover {
+  opacity: 100%;
+}
+.technology .radio-box input:checked ~ span {
+  opacity: 100%;
+  background-color: white;
+}
+.technology .radio-box input:checked ~ .button-text {
+  z-index: 5;
+  color: #0b0d17;
+}
+.technology .left .text-box {
+  width: 470px;
+}
+.technology .capsule {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+}
+.technology .spaceport {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+}
+.landscape-img {
+  display: none;
+}
+/* 7.MEDIA TABLET------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1000px) {
+  /* HEADER */
+  .h-line {
+    display: none;
+  }
+  body {
+    padding: 0 0 0 39px;
+  }
+  header {
+    max-width: 729px;
+  }
+  .navigation {
+    min-width: 450px;
+    max-width: 450px;
+  }
+  nav {
+    width: 356px;
+  }
+  nav b {
+    display: none;
+  }
+  nav p {
+    font-size: 14px;
+  }
+  /* HOME */
+  body.home {
+    background-image: url(assets/home/background-home-tablet.jpg);
+  }
+  .home main {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .left {
+    text-align: center;
+    margin-top: 106px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  .home .left p {
+    line-height: 28px;
+    font-size: 16px;
+    padding: 2px;
+  }
+  .home .right {
+    width: 100%;
+    height: 242px;
+  }
+  .home button {
+    width: 242px;
+    height: 242px;
+    margin-top: 155px;
+  }
+  .home .shadow {
+    display: none;
+  }
+  /* DESTINATION */
+  .destination main {
+    margin: 0 39px 0 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .destination .left img {
+    width: 300px;
+    height: 300px;
+  }
+  .destination .left h5 {
+    position: absolute;
+    top: 136px;
+    left: 38.5px;
+  }
+  .destination .left {
+    margin: 124px 0 53px 0;
+  }
+  .destination .right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 573px;
+  }
+  .destination .right p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+  }
+  .destination .right h2 {
+    font-size: 80px;
+  }
+  .destination .right nav {
+    margin-bottom: 32px;
+  }
+  .destination .right .line {
+    margin: 49px 0 28px 0;
+  }
+  .destination .right .subhead2 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .destination .right .subhead1 {
+    font-size: 28px;
+  }
+  /* CREW */
+  .crew main {
+    margin: 0;
+  }
+  .crew .left h5 {
+    position: absolute;
+    top: 136px;
+    left: 38.5px;
+  }
+  .crew .left {
+    margin-top: 124px;
+  }
+  .crew .commander-gr .left {
+    width: 458px;
+  }
+  .crew .mission-specialist-gr .left {
+    width: 520px;
+  }
+  .crew .pilot-gr .left {
+    width: 592px;
+  }
+  .crew .engineer-gr .left {
+    width: 536px;
+  }
+  .crew .fade-in-an {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .crew h4 {
+    font-size: 24px;
+  }
+  .crew h3 {
+    font-size: 40px;
+  }
+  .crew .left p {
+    margin: 0;
+    width: auto;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .crew .radiobox-position {
+    top: 470px;
+    left: 46.2vw;
+  }
+  .crew .radiobox {
+    width: 88px;
+  }
+  .crew .radiobox span {
+    width: 10px;
+    height: 10px;
+  }
+  .crew .radiobox input:checked ~ span:after {
+    width: 10px;
+    height: 10px;
+  }
+  .crew .right img {
+    scale: 0.8;
+  }
+  /* TECHNOLOGY */
+  .technology main {
+    margin: 0;
+  }
+  .portrait-img {
+    display: none;
+  }
+  .landscape-img {
+    display: block;
+    width: 101vw;
+    height: 310px;
+    margin-left: -39px;
+    position: absolute;
+    top: 21.1vh;
+  }
+  .technology .vehicle {
+    flex-direction: column-reverse;
+  }
+  .technology .capsule {
+    flex-direction: column-reverse;
+  }
+  .technology .spaceport {
+    flex-direction: column-reverse;
+  }
+  .technology .wrapper {
+    flex-direction: column;
+  }
+  .technology .left {
+    text-align: center;
+    justify-content: center;
+    margin-right: 39px;
+    height: auto;
+  }
+  .technology h5 {
+    margin: 40px 0 60px 0;
+  }
+  .technology .left p {
+    line-height: 28px;
+    font-size: 16px;
+  }
+  .technology .left h3 {
+    font-size: 40px;
+  }
+  .technology .radio-box {
+    margin: 366px 0 44px -40px;
+    height: auto;
+    width: 210px;
+    flex-direction: row;
+  }
+  .technology .radio-box span {
+    height: 58px;
+    width: 58px;
+  }
+  .technology .button-text {
+    font-size: 24px;
+    left: 25px;
+    top: 20px;
+  }
+}
+/* 8.MEDIA PHONE ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 500px) {
+  /* HEADER */
+  header nav {
+    flex-direction: column;
+    height: 667px;
+    width: 224px;
+    align-items: flex-start;
+    justify-content: normal;
+    padding: 0 0 0 32px;
+  }
+  header nav p {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  header b {
+    display: inline-block;
+  }
+  .navigation {
+    min-width: 254px;
+    max-width: 254px;
+    height: auto;
+    position: fixed;
+    top: 0;
+
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .navigation.active {
+    transition: 0.5s;
+    right: 0;
+  }
+  .navigation.hamburger {
+    transition: 0.5s;
+    right: -70vw;
+  }
+  .navitm {
+    display: block;
+    width: 100%;
+  }
+  .header-close {
+    display: block;
+    margin: 34px 26px 60px 0;
+  }
+  .header-hamburger {
+    display: block;
+    margin: 33px 24px 0 0;
+  }
+  .header-logo {
+    margin-top: 24px;
+    width: 40px;
+    height: 40px;
+  }
+  body {
+    padding: 0 0 0 24px;
+  }
+  h5 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .hover-underline {
+    display: none;
+  }
+  /* HOME */
+  body.home {
+    background-image: url(assets/home/background-home-mobile.jpg);
+    background-size: auto;
+    overflow: scroll;
+  }
+  .home .underline {
+    right: -3.5vw;
+    top: 11%;
+    rotate: 90deg;
+    width: 31px;
+  }
+  .home .left h1 {
+    font-size: 80px;
+    margin: 16px 0;
+  }
+  .home .left {
+    width: auto;
+    height: auto;
+    margin-top: 48px;
+  }
+  .home main {
+    margin-right: 24px;
+  }
+  .home .left p {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0;
+  }
+  .home button {
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+  }
+  button h4 {
+    font-size: 20px;
+  }
+  .home .right {
+    padding: 50px 0 0 0;
+  }
+  /* DESTINATION */
+  body.destination {
+    background-image: url(assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    overflow: scroll;
+  }
+  .destination main {
+    margin: 0 24px 0 0;
+  }
+  .destination header .underline {
+    right: -3.5vw;
+    top: 11%;
+    rotate: 90deg;
+    width: 31px;
+  }
+  .destination .left {
+    margin: 24px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .destination .left h5 {
+    margin-bottom: 0;
+    position: static;
+  }
+  .destination .left img {
+    width: 170px;
+    height: 170px;
+    margin: 32px 0 26px 0;
+  }
+
+  .destination h2 {
+    font-size: 56px;
+  }
+  .destination .right {
+    width: auto;
+    height: 100%;
+    padding-bottom: 58px;
+    margin-bottom: 0;
+  }
+  .destination .right p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  @keyframes fade-in2 {
+    0% {
+    }
+    100% {
+    }
+  }
+  .destination .right .line {
+    margin: 32px 0;
+  }
+  .destination .bottom-content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .destination .distance {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .destination .right .underline {
+    width: 36px;
+    left: 23.5%;
+  }
+  /* CREW */
+  body.crew {
+    background-image: url(assets/crew/background-crew-mobile.jpg);
+    background-size: cover;
+    overflow: scroll;
+  }
+  .crew main {
+    margin-right: 24px;
+  }
+  .crew .underline {
+    right: -3.5vw;
+    top: 11%;
+    rotate: 90deg;
+    width: 31px;
+  }
+  .crew .commander-gr {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .crew .engineer-gr {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .crew .mission-specialist-gr {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .crew .pilot-gr {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .crew .right img {
+    scale: 1;
+    height: 222px;
+  }
+  .crew .right {
+    margin-top: 75px;
+    width: 100%;
+  }
+  .crew .commander-gr .left {
+    width: auto;
+  }
+  .crew .engineer-gr .left {
+    width: auto;
+  }
+  .crew .pilot-gr .left {
+    width: auto;
+  }
+  .crew .mission-specialist-gr .left {
+    width: auto;
+  }
+  .crew .left h5 {
+    left: 105px;
+    top: 88px;
+  }
+  .image-line {
+    height: 1px;
+    width: 100%;
+    margin-top: -2px;
+    background-color: #383b4b;
+  }
+  .crew h4 {
+    font-size: 16px;
+  }
+  .crew h3 {
+    font-size: 24px;
+  }
+  .crew .left p {
+    font-size: 15px;
+    line-height: 25px;
+    width: auto;
+  }
+  .crew .radiobox-position {
+    top: 394px;
+    left: 37vw;
+  }
+  .crew .left {
+    margin-top: 74px;
+    margin-bottom: 25px;
+  }
+  /* TECHNOLOGY */
+  body.technology {
+    background-image: url(assets/technology/background-technology-mobile.jpg);
+    background-size: auto;
+    overflow: scroll;
+  }
+  .technology main {
+    margin-right: 24px;
+  }
+  .technology .underline {
+    right: -3.5vw;
+    top: 11%;
+    rotate: 90deg;
+    width: 31px;
+  }
+  .technology h5 {
+    margin: 24px 0 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  .technology h5 b {
+    margin: 0 6px 0 0;
+  }
+  .technology .right .landscape-img {
+    height: 170px;
+    width: 99vw;
+    margin-left: -21px;
+  }
+  .technology .radio-box {
+    margin: 236px 0 26px 0;
+    width: 152px;
+  }
+  .technology .radio-box span {
+    height: 40px;
+    width: 40px;
+  }
+  .technology .button-text {
+    font-size: 16px;
+    left: 18px;
+    top: 14px;
+  }
+  .technology .left .termino {
+    font-size: 14px;
+  }
+  .technology .left h3 {
+    font-size: 24px;
+    margin: 9px 0 16px 0;
+  }
+  .technology .left p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .technology .left {
+    margin-right: 0;
+  }
+}

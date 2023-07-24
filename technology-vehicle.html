@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resetcss.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="technology">
+    <header>
+      <img src="assets/shared/logo.svg" alt="logo" class="header-logo" />
+      <img
+        src="assets/shared/icon-hamburger.svg"
+        alt="open"
+        class="header-hamburger"
+      />
+      <div class="h-line"></div>
+      <div class="navigation hamburger">
+        <img
+          src="assets/shared/icon-close.svg"
+          alt="close"
+          class="header-close"
+        />
+        <nav>
+          <div class="home-nav navitm">
+            <a href="index.html"
+              ><p><b>00</b> Home</p></a
+            >
+            <div class="hover-underline ho"></div>
+          </div>
+          <div class="destination-nav navitm">
+            <a href="destination-moon.html"
+              ><p><b>01</b> Destination</p></a
+            >
+            <div class="hover-underline de"></div>
+          </div>
+          <div class="crew-nav navitm">
+            <a href="crew-commander.html"
+              ><p><b>02</b> Crew</p></a
+            >
+            <div class="hover-underline cr"></div>
+          </div>
+          <div class="technology-nav navitm">
+            <a href="technology-vehicle.html"
+              ><p><b>03</b> Technology</p></a
+            >
+            <div class="hover-underline te"></div>
+            <div class="underline"></div>
+          </div>
+        </nav>
+        <div class="blur"></div>
+      </div>
+    </header>
+    <main>
+      <h5><b>03</b> SPACE LAUNCH 101</h5>
+      <div class="wrapper">
+        <div class="radio-box">
+          <label>
+            <input type="radio" name="change" value="1" checked />
+            <span></span>
+            <p class="button-text">1</p>
+          </label>
+          <label>
+            <input type="radio" name="change" value="2" />
+            <span></span>
+            <p class="button-text">2</p>
+          </label>
+          <label>
+            <input type="radio" name="change" value="3" />
+            <span></span>
+            <p class="button-text">3</p>
+          </label>
+        </div>
+        <div class="vehicle fade-in-an">
+          <div class="left">
+            <div class="text-box">
+              <p class="termino">THE TERMINOLOGY...</p>
+              <h3>LAUNCH VEHICLE</h3>
+              <p>
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually
+                to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              class="portrait-img"
+              src="assets/technology/image-launch-vehicle-portrait.jpg"
+            />
+            <img class="landscape-img"
+            src="assets/technology/image-launch-vehicle-landscape.jpg"
+          </div>
+        </div>
+        </div>
+        <!--END OF VEHICLE-->
+        <div class="spaceport fade-in-an">
+          <div class="left">
+            <div class="text-box">
+              <p class="termino">THE TERMINOLOGY...</p>
+              <h3>SPACEPORT</h3>
+              <p>
+                A spaceport or cosmodrome is a site for launching (or receiving)
+                spacecraft, by analogy to the seaport for ships or airport for
+                aircraft. Based in the famous Cape Canaveral, our spaceport is
+                ideally situated to take advantage of the Earth’s rotation for
+                launch.
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              class="portrait-img"
+              src="assets/technology/image-spaceport-portrait.jpg"
+            />
+            <img class="landscape-img"
+            src="assets/technology/image-spaceport-landscape.jpg"
+          </div>
+        </div></div>
+        <!--END OF SPACEPORT-->
+        <div class="capsule fade-in-an">
+          <div class="left">
+            <div class="text-box">
+              <p class="termino">THE TERMINOLOGY...</p>
+              <h3>SPACE CAPSULE</h3>
+              <p>
+                A space capsule is an often-crewed spacecraft that uses a
+                blunt-body reentry capsule to reenter the Earth's atmosphere
+                without wings. Our capsule is where you'll spend your time
+                during the flight. It includes a space gym, cinema, and plenty
+                of other activities to keep you entertained.
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              class="portrait-img"
+              src="assets/technology/image-space-capsule-portrait.jpg"
+            />
+            <img
+              class="landscape-img"
+              src="assets/technology/image-space-capsule-landscape.jpg"
+            />
+          </div>
+        </div>
+        <!--END OF CAPSULE-->
+      </div>
+      <script>
+        const radio = document.querySelector(".radio-box");
+        const vehicle = document.querySelector(".vehicle");
+        const spaceport = document.querySelector(".spaceport");
+        const capsule = document.querySelector(".capsule");
+        const input = document.getElementsByName("change");
+
+        radio.addEventListener("click", pagchange);
+        function pagchange() {
+          for (let i = 0; i < input.length; i++) {
+            if (input[i].checked) {
+              if (input[i].value == 1) {
+                spaceport.style.display = "none";
+                capsule.style.display = "none";
+                vehicle.style.display = "flex";
+              }
+              if (input[i].value == 2) {
+                vehicle.style.display = "none";
+                capsule.style.display = "none";
+                spaceport.style.display = "flex";
+              }
+              if (input[i].value == 3) {
+                spaceport.style.display = "none";
+                vehicle.style.display = "none";
+                capsule.style.display = "flex";
+              }
+            }
+          }
+        }
+      </script>
+    </main>
+    <script src="header-toggle.js"></script>
+  </body>
+</html>
