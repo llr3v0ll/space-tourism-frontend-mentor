@@ -155,7 +155,8 @@ body.home {
   background: url(assets/home/background-home-desktop.jpg);
   background-size: cover;
   min-height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
+  box-sizing: border-box;
 }
 .home main {
   display: flex;
@@ -222,7 +223,7 @@ body.destination {
   background: url(assets/destination/background-destination-desktop.jpg);
   background-size: cover;
   min-height: 100vh;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 .destination .underline {
   width: 100%;
@@ -321,7 +322,7 @@ body.crew {
   background: url(assets/crew/background-crew-desktop.jpg);
   background-size: cover;
   min-height: 100vh;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 .crew .underline {
   width: 100%;
@@ -451,7 +452,7 @@ body.technology {
   background: url(assets/technology/background-technology-desktop.jpg);
   background-size: cover;
   min-height: 100vh;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 .technology .underline {
   height: 3px;
@@ -559,7 +560,7 @@ body.technology {
   display: none;
 }
 /* 7.MEDIA TABLET------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   /* HEADER */
   .h-line {
     display: none;
@@ -586,6 +587,9 @@ body.technology {
   /* HOME */
   body.home {
     background-image: url(assets/home/background-home-tablet.jpg);
+    overflow: scroll;
+    background-size: cover;
+    background-position: center;
   }
   .home main {
     margin: 0;
@@ -672,6 +676,9 @@ body.technology {
   }
   .crew .left {
     margin-top: 124px;
+  }
+  .crew .commander-gr {
+    height: unset;
   }
   .crew .commander-gr .left {
     width: 458px;
@@ -780,7 +787,7 @@ body.technology {
   }
 }
 /* 8.MEDIA PHONE ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   /* HEADER */
   header nav {
     flex-direction: column;
